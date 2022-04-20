@@ -1,37 +1,64 @@
 .unorderedlist {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
   
-  li {
-    float: left;
-  }
+li {
+  float: left;
+}
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 
-  footer {
-    margin-top: auto;
-    text-align: center;
-    padding: 3px;
-    background-color: #333;
-    color: white;
-  }
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 3px;
+  background-color: #333;
+  color: white;
+}
 
-.tableau-format{
-  max-height: 100%;
-  max-width: 100%;
+.column {
+  float: left;
+  width: 46%;
+  padding: 2%;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.caption {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  color: rgb(161, 161, 161)
+}
+
+footer {
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 13px;
 }
